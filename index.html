@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Zakul Arctic Air – Твій оазис у спеку</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo" aria-label="Zakul логотип">
+      <svg width="180" height="60" viewBox="0 0 300 60">
+        <text x="0" y="45" font-family="Montserrat" font-size="48" fill="#000" font-weight="bold">Zakul</text>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <sect class="product">
+      <div class="slider" aria-label="Галерея товару">
+        <div class="main-photo">
+          <img src="img/1.jpg" alt="Arctic Air – головне фото" id="mainImage">
+        </div>
+        <div class="thumbnails">
+          <img src="img/1.jpg" alt="Arctic Air – фото 1" class="thumb active">
+          <img src="img/2.jpg" alt="Arctic Air – фото 2" class="thumb">
+          <img src="img/3.jpg" alt="Arctic Air – фото 3" class="thumb">
+          <img src="img/4.jpg" alt="Arctic Air – фото 4" class="thumb">
+          <img src="img/5.jpg" alt="Arctic Air – фото 5" class="thumb">
+          <img src="img/6.jpg" alt="Arctic Air – фото 6" class="thumb">
+        </div>
+      </div>
+
+
+
+    <div class="details">
+      <h1>Zakul Arctic Air – Твій особистий оазис у спеку</h1>
+
+      <div class="stickers">
+        <span class="sticker hot">🔥 Хіт продажів</span>
+        <span class="sticker limited">⚠️ Обмежена кількість</span>
+        <span class="sticker best">⭐ Бестселлер</span>
+      </div>
+
+      <p>Компактний, портативний кондиціонер, який охолоджує, зволожує та очищує повітря довкола тебе. Ідеальний для
+        спекотних днів вдома чи в офісі.</p>
+      <div class="price">649 грн</div>
+      <div class="urgency">Залишилось тільки 7 штук на складі!</div>
+    </div>
+    </section>
+
+    <section class="order">
+      <h2>Оформити замовлення</h2>
+      <form id="order-form">
+        <input type="text" id="fullname" placeholder="Ваше ім'я" required>
+        <input type="tel" id="phone" placeholder="Телефон" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="city" placeholder="Місто" required>
+        <select id="warehouse" required>
+          <option disabled selected>Оберіть відділення</option>
+        </select>
+        <button type="submit">Замовити зараз</button>
+        <div id="message"></div>
+      </form>
+    </section>
+
+    <section class="comments">
+      <h2>Відгуки покупців</h2>
+      <div class="comment-list" id="comments-list"></div>
+
+      <form id="comment-form" class="comment-form">
+        <div class="star-rating" id="star-rating">
+          <span data-value="1">☆</span>
+          <span data-value="2">☆</span>
+          <span data-value="3">☆</span>
+          <span data-value="4">☆</span>
+          <span data-value="5">☆</span>
+        </div>
+        <input type="hidden" id="rating-value" value="0">
+
+        <input type="text" id="comment-name" placeholder="Ваше ім'я" required>
+        <textarea id="comment-text" rows="4" placeholder="Ваш відгук" required></textarea>
+
+        <button type="submit">Залишити відгук</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Zakul Shop. Усі права захищено.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
